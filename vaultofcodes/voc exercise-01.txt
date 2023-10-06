@@ -1,0 +1,24 @@
+Given code:
+public class ArrayManipulation{
+    public static void main(String[] args) {
+        int[] numbers={1,2,3,4,5};
+        for(int i=0;i<=numbers.length;i++){
+            System.out.println(numbers[i]);
+        }
+    }
+}
+
+Explanation: 
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5at ArrayManipulation.main(ArrayManipulation.java:8)
+
+Correct code:
+public class ArrayManipulation{
+    public static void main(String[] args) {
+        int[] numbers={1,2,3,4,5};
+        for(int i=0;i<numbers.length;i++){
+            System.out.println(numbers[i]);
+        }
+    }
+}
+
+
